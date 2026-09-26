@@ -1,6 +1,6 @@
 package com.microservices.employeeapp.service;
 
-import com.microservices.addressApp.dto.AddressResponse;
+import com.microservices.employeeapp.dto.AddressResponse;
 import com.microservices.employeeapp.dto.EmployeeResponse;
 import com.microservices.employeeapp.entity.EmployeeEntity;
 import com.microservices.employeeapp.feignclient.AddressClient;

@@ -1,6 +1,5 @@
 package com.microservices.employeeapp.entity;
 
-import com.microservices.addressApp.entity.AddressEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -20,7 +19,7 @@ public class EmployeeEntity {
     private Long id;
     private String name;
     private String email;
-    private boolean isActive;
+ //   private boolean isActive = false;
 
 //    @OneToOne(cascade = CascadeType.ALL)
 //    @JoinColumn(name = "address_id", referencedColumnName = "id")
