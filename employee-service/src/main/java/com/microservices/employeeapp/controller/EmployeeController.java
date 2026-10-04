@@ -2,13 +2,15 @@ package com.microservices.employeeapp.controller;
 
 import com.microservices.employeeapp.dto.EmployeeResponse;
 import com.microservices.employeeapp.service.EmployeeService;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/employees")
+@RequestMapping("/employee")
 public class EmployeeController {
+
 
     private final EmployeeService employeeService;
     public EmployeeController(EmployeeService employeeService) {
@@ -20,6 +22,7 @@ public class EmployeeController {
         EmployeeResponse employee = employeeService.getEmployeeById(id);
         return ResponseEntity.status(HttpStatus.CREATED).body(employee);
     }
+
 
 
 }
